@@ -1,0 +1,66 @@
+\hypertarget{_graphic_8h_source}{}\doxysection{Graphic.\+h}
+\mbox{\hyperlink{_graphic_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/* ******************************************************* }}
+\DoxyCodeLine{2 \textcolor{comment}{ * Filename     :   Graphic.h}}
+\DoxyCodeLine{3 \textcolor{comment}{ * Author       :   Alihan BOZKIR       }}
+\DoxyCodeLine{4 \textcolor{comment}{ * Date         :   14.12.2022}}
+\DoxyCodeLine{5 \textcolor{comment}{ * Description  :   Graphic Class Interface}}
+\DoxyCodeLine{6 \textcolor{comment}{ * ******************************************************/}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#ifndef GRAPHIC\_H}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#define GRAPHIC\_H}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_feature_8h}{Feature.h}}"{}}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include<iostream>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include<algorithm>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include<vector>}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <graphics.h>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <conio.h>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include <cstdlib>}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <ctime>}}
+\DoxyCodeLine{22 }
+\DoxyCodeLine{23 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{const} \textcolor{keywordtype}{int} \mbox{\hyperlink{_graphic_8h_ad391ba0f59bf24e4bdb205b19c0c0b45}{NUMBER\_TRAIN\_SAMPLES}} = 30;}
+\DoxyCodeLine{26 \textcolor{keyword}{const} \textcolor{keywordtype}{int} \mbox{\hyperlink{_graphic_8h_a3d595c6abde4bac20cb8515f916e7e78}{NUMBER\_TEST\_SAMPLES}} = 10;}
+\DoxyCodeLine{27 \textcolor{keyword}{const} \textcolor{keywordtype}{int} \mbox{\hyperlink{_graphic_8h_adb3135d422419f068ef8c4f3f6d54fd5}{NUM\_CATEGORIES}} = 3;}
+\DoxyCodeLine{28 \textcolor{keyword}{const} \textcolor{keywordtype}{int} \mbox{\hyperlink{_graphic_8h_a3d5951f46f9ad30d24486555720e94de}{MIN\_COORDINATE}} = -\/5;}
+\DoxyCodeLine{29 \textcolor{keyword}{const} \textcolor{keywordtype}{int} \mbox{\hyperlink{_graphic_8h_a2ffa4e6f40022e1979a81b0521486d16}{MAX\_COORDINATE}} = 5;}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32 \textcolor{keyword}{class }\mbox{\hyperlink{class_graphic}{Graphic}} \{}
+\DoxyCodeLine{33 \textcolor{keyword}{public}:}
+\DoxyCodeLine{35     \mbox{\hyperlink{class_graphic}{Graphic}}( vector<Feature> , vector<Feature> );}
+\DoxyCodeLine{37     \mbox{\hyperlink{class_graphic_a19b3149c0c1527532b85b4cfaa8c141f}{\string~Graphic}}();}
+\DoxyCodeLine{38     }
+\DoxyCodeLine{41     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graphic_ae15068aa0e7f38f694ea2be88050a917}{setTestData}}(vector<Feature> \&);}
+\DoxyCodeLine{43     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graphic_a8fc480ceba9aa70b72bdd3358cbc70d5}{setTrainData}}(vector<Feature> \&);}
+\DoxyCodeLine{44     }
+\DoxyCodeLine{47     vector<Feature> \mbox{\hyperlink{class_graphic_aecf3876179fbffe6fea52ee8f05201e2}{getTestData}}(\textcolor{keywordtype}{void})\textcolor{keyword}{const};}
+\DoxyCodeLine{49     vector<Feature> \mbox{\hyperlink{class_graphic_af280f4dca5a6779dfd35a990374df86a}{getTrainData}}(\textcolor{keywordtype}{void})\textcolor{keyword}{const};}
+\DoxyCodeLine{50     }
+\DoxyCodeLine{53     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graphic_af4ddc76b1d24cf422602c9a89ec250dd}{drawAxes}}(\textcolor{keywordtype}{int} left, \textcolor{keywordtype}{int} top, \textcolor{keywordtype}{int} right, \textcolor{keywordtype}{int} bottom);}
+\DoxyCodeLine{55     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graphic_a06801966e34ca3db518f850778ec39c5}{drawTicks}}(\textcolor{keywordtype}{int} left, \textcolor{keywordtype}{int} top, \textcolor{keywordtype}{int} right, \textcolor{keywordtype}{int} bottom);}
+\DoxyCodeLine{57     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graphic_a33b4e50d4a6913e7e0e3779ea0d180bb}{drawNumbers}}(\textcolor{keywordtype}{int} left, \textcolor{keywordtype}{int} top, \textcolor{keywordtype}{int} right, \textcolor{keywordtype}{int} bottom);}
+\DoxyCodeLine{59     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graphic_a9f7125f14128b7659e65bc28d83ed0a9}{drawGrid}}(\textcolor{keywordtype}{int} left, \textcolor{keywordtype}{int} top, \textcolor{keywordtype}{int} right, \textcolor{keywordtype}{int} bottom);}
+\DoxyCodeLine{61     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graphic_a84d476d6c7386d1272bb1dbac87b2639}{drawSamplesTrain}}(vector<Feature> \&, \textcolor{keywordtype}{int} numSamples, \textcolor{keywordtype}{int} left, \textcolor{keywordtype}{int} top, \textcolor{keywordtype}{int} right, \textcolor{keywordtype}{int} bottom);}
+\DoxyCodeLine{63     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graphic_a18a6b82353d7e9662ec441200ac68cf7}{drawSamplesTest}}(vector<Feature> \&, \textcolor{keywordtype}{int} numSamples, \textcolor{keywordtype}{int} left, \textcolor{keywordtype}{int} top, \textcolor{keywordtype}{int} right, \textcolor{keywordtype}{int} bottom);}
+\DoxyCodeLine{65     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_graphic_a09cb841359c4a984d33d9c5cd6e2aad4}{initiate}}(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{66     }
+\DoxyCodeLine{67     }
+\DoxyCodeLine{68     \textcolor{keyword}{private}:}
+\DoxyCodeLine{71         vector<Feature> Test;}
+\DoxyCodeLine{73         vector<Feature> Train;}
+\DoxyCodeLine{74 \};}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80 }
+
+\end{DoxyCode}

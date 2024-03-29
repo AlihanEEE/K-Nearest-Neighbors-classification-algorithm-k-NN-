@@ -1,0 +1,43 @@
+# Project: Lab_Final
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o Containers.o KNN.o Graphic.o Read_Write.o Feature.o
+LINKOBJ  = main.o Containers.o KNN.o Graphic.o Read_Write.o Feature.o
+LIBS     = -L"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -lbgi -lgdi32 -luser32 -m32
+INCS     = -I"C:/Program Files/Dev-Cpp/MinGW64/include" -I"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files/Dev-Cpp/MinGW64/include" -I"C:/Program Files/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = Lab_Final.exe
+CXXFLAGS = $(CXXINCS) -m32
+CFLAGS   = $(INCS) -m32
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+Containers.o: Containers.cpp
+	$(CPP) -c Containers.cpp -o Containers.o $(CXXFLAGS)
+
+KNN.o: KNN.cpp
+	$(CPP) -c KNN.cpp -o KNN.o $(CXXFLAGS)
+
+Graphic.o: Graphic.cpp
+	$(CPP) -c Graphic.cpp -o Graphic.o $(CXXFLAGS)
+
+Read_Write.o: Read_Write.cpp
+	$(CPP) -c Read_Write.cpp -o Read_Write.o $(CXXFLAGS)
+
+Feature.o: Feature.cpp
+	$(CPP) -c Feature.cpp -o Feature.o $(CXXFLAGS)

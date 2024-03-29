@@ -1,0 +1,55 @@
+\hypertarget{_feature_8h_source}{}\doxysection{Feature.\+h}
+\mbox{\hyperlink{_feature_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{comment}{/* ******************************************************* }}
+\DoxyCodeLine{2 \textcolor{comment}{ * Filename     :   Feature.h}}
+\DoxyCodeLine{3 \textcolor{comment}{ * Author       :   Alihan BOZKIR       }}
+\DoxyCodeLine{4 \textcolor{comment}{ * Date         :   14.12.2022}}
+\DoxyCodeLine{5 \textcolor{comment}{ * Description  :   Feature Class Interface}}
+\DoxyCodeLine{6 \textcolor{comment}{ * ******************************************************/}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{comment}{// prevent multiple inclusions of header}}
+\DoxyCodeLine{9 \textcolor{preprocessor}{\#ifndef FEATURE\_H}}
+\DoxyCodeLine{10 \textcolor{preprocessor}{\#define FEATURE\_H}}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include<iostream>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include<algorithm>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include<vector>}}
+\DoxyCodeLine{15 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{comment}{// Feature class definition}}
+\DoxyCodeLine{18 \textcolor{keyword}{class }\mbox{\hyperlink{class_feature}{Feature}}}
+\DoxyCodeLine{19 \{}
+\DoxyCodeLine{21     \textcolor{keyword}{friend} ostream \&\mbox{\hyperlink{class_feature_a5403d10f89738c6b26ce8b05bad06d0c}{operator<<}}(ostream \&,\textcolor{keyword}{const} \mbox{\hyperlink{class_feature}{Feature}} \&);}
+\DoxyCodeLine{22     }
+\DoxyCodeLine{23     \textcolor{keyword}{public}:}
+\DoxyCodeLine{25         \mbox{\hyperlink{class_feature}{Feature}}(\textcolor{keywordtype}{int}=0,\textcolor{keywordtype}{int}=0);}
+\DoxyCodeLine{26         }
+\DoxyCodeLine{29         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_feature_a3e2804ddff064977303f20a654b0b6dc}{setX}}(\textcolor{keywordtype}{double});}
+\DoxyCodeLine{31         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_feature_a05123804692dc6490b41375f70dcddd8}{setY}}(\textcolor{keywordtype}{double});}
+\DoxyCodeLine{33         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_feature_aaa72b63fd87209d09eea60e89ba06936}{setCat}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{35         \textcolor{keywordtype}{void} \mbox{\hyperlink{class_feature_afd69651fc2929cc8eea96d3238b5701a}{setId}}(\textcolor{keywordtype}{int});}
+\DoxyCodeLine{36         }
+\DoxyCodeLine{39         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_feature_a5b28ad695e0740dc9a1535c310602cf1}{getX}}(\textcolor{keywordtype}{void}) \textcolor{keyword}{const};}
+\DoxyCodeLine{41         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_feature_a034dcbe2051ffe809c3cb30acfe1ce8d}{getY}}(\textcolor{keywordtype}{void}) \textcolor{keyword}{const};}
+\DoxyCodeLine{43         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_feature_ae704ef49992133eee40a4130f49062a7}{getCat}}(\textcolor{keywordtype}{void}) \textcolor{keyword}{const};}
+\DoxyCodeLine{45         \textcolor{keywordtype}{double} \mbox{\hyperlink{class_feature_aad39996538675ae2f99294b3363e949a}{getId}}(\textcolor{keywordtype}{void}) \textcolor{keyword}{const};  }
+\DoxyCodeLine{46         }
+\DoxyCodeLine{48         \mbox{\hyperlink{class_feature_ac74e4360e975b5003f6d9e1bed6cc4be}{\string~Feature}}();}
+\DoxyCodeLine{49         }
+\DoxyCodeLine{50         }
+\DoxyCodeLine{51     \textcolor{keyword}{private}:}
+\DoxyCodeLine{54         \textcolor{keywordtype}{int} cat;}
+\DoxyCodeLine{56         \textcolor{keywordtype}{int} id;}
+\DoxyCodeLine{58         \textcolor{keywordtype}{double} x;}
+\DoxyCodeLine{60         \textcolor{keywordtype}{double} y; }
+\DoxyCodeLine{61         }
+\DoxyCodeLine{64         \textcolor{keywordtype}{double} random(\textcolor{keywordtype}{void}) \textcolor{keyword}{const};}
+\DoxyCodeLine{65         }
+\DoxyCodeLine{66 \};}
+\DoxyCodeLine{67 }
+\DoxyCodeLine{68 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70 }
+
+\end{DoxyCode}
