@@ -10,11 +10,10 @@ git clone https://github.com/AlihanEEE/cpp-K-Nearest-Neighbors-classification-al
 cd cpp-K-Nearest-Neighbors-classification-algorithm-k-NN-
 g++ -o knn main.cpp
 
-
-##Usage
+## Usage
 To run the k-NN algorithm, execute the compiled program and follow the on-screen prompts to input your data set and parameters.
 
-##Features
+## Features
 Efficient implementation of the k-NN algorithm.
 Supports variable values of k.
 Simple data set format for easy usage.
